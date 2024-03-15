@@ -1,9 +1,10 @@
 {
   "name": "webrtc-codelab",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WebRTC codelab",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev":"nodemon index.js"
   },
   "devDependencies": {
     "@types/nodemon": "^1.19.6",
