@@ -11,7 +11,7 @@ var app = http.createServer(function(req, res) {
   fileServer.serve(req, res);
 }).listen(port);
 
-var io = socketIO.listen(app);
+var io = socketIO(app);
 io.sockets.on('connection', function(socket) {
 
   // convenience function to log server messages on the client
